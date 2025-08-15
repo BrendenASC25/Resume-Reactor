@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Reactor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-raindrops"></div>
+  <div class="music-logo" id="music-btn">
+    <img src="musiclogo.png" alt="Music Icon">
+  </div>
+  <header class="header">
+    <h1 class="title">Resume Reactor</h1>
+    <h2 class="explanation">Make Your Resume Fast &amp; Easy</h2>
+    <p class="description">Paste a job description, add your info, and your tailored resume + cover letter are ready to go.</p>
+    <div class="header-buttons">
+      <a href="aboutme.html" target="_blank" class="btn btn-about">About Me</a>
+      <button id="resume-generator" class="btn btn-generate">Generate Resume</button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="content-section">
+      <h3 class="cadvids">How It Works</h3>
+      <ol>
+        <li>Paste the job description.</li>
+        <li>Add your experience and details.</li>
+        <li>Generate a clean resume and cover letter you can tweak.</li>
+      </ol>
+    </section>
+    <section class="content-section" id="generate-section">
+      <h3 class="cadvids">Generate Resume</h3>
+      <div id="verbatim-response">
+        <textarea id="job-description" placeholder="Paste job description or write your info here..."></textarea>
+        <button id="generate" class="btn btn-generate">Generate Resume</button>
+      </div>
+    </section>
+    <section class="content-section">
+      <h3 class="cadvids">Preview</h3>
+      <div id="preview">Your tailored resume will appear here...</div>
+    </section>
+    <section class="content-section">
+      <h3 class="cadvids">Disclaimer</h3>
+      <p>This is only a demo and there are many faulty functions!</p>
+    </section>
+    <section class="content-section contact-section" style="align-items: flex-end; text-align: right;">
+  <h3 class="cadvids">Contact Me</h3>
+  <button class="btn btn-linkedin" onclick="window.open('https://www.linkedin.com/in/brenden-abankwa-71b225379/', '_blank')">LinkedIn</button>
+    </section>
+  </main>
+  <button id="pitchdeck">Open Pitch Deck</button>
+  <button id="MVP">See MVP Here</button>
+  <footer class="footer">
+    <p>Thanks for checking it out — Brenden Abankwa</p>
+  </footer>
+  <audio id="bg-music" src="capstonemusic.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
